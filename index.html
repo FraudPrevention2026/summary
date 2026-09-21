@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>詐欺対策ゲームポータル</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      min-height: 100vh;
+
+      background:
+        linear-gradient(
+          135deg,
+          #6366f1,
+          #8b5cf6,
+          #ec4899
+        );
+
+      padding: 30px 18px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      color: white;
+      margin-bottom: 35px;
+    }
+
+    .header-icon {
+      font-size: 55px;
+      margin-bottom: 10px;
+    }
+
+    .header h1 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .header p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .games {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .game-card {
+      background:
+        rgba(255,255,255,0.18);
+
+      backdrop-filter:
+        blur(15px);
+
+      border:
+        1px solid
+        rgba(255,255,255,0.25);
+
+      border-radius: 25px;
+
+      padding: 22px;
+
+      color: white;
+
+      box-shadow:
+        0 10px 30px
+        rgba(0,0,0,0.2);
+    }
+
+    .game-icon {
+      font-size: 38px;
+      margin-bottom: 8px;
+    }
+
+    .game-number {
+      font-size: 13px;
+      font-weight: bold;
+      opacity: 0.75;
+      margin-bottom: 5px;
+    }
+
+    .game-card h2 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .game-card p {
+      font-size: 14px;
+      line-height: 1.7;
+      color:
+        rgba(255,255,255,0.9);
+
+      margin-bottom: 18px;
+    }
+
+    .play-button {
+      display: block;
+
+      width: 100%;
+
+      padding: 14px;
+
+      background: white;
+
+      color: #6366f1;
+
+      text-align: center;
+
+      text-decoration: none;
+
+      font-size: 16px;
+      font-weight: bold;
+
+      border-radius: 15px;
+
+      box-shadow:
+        0 6px 15px
+        rgba(0,0,0,0.15);
+
+      transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+    }
+
+    .play-button:active {
+      transform:
+        scale(0.96);
+
+      box-shadow:
+        0 3px 8px
+        rgba(0,0,0,0.15);
+    }
+
+    .footer {
+      text-align: center;
+
+      color:
+        rgba(255,255,255,0.8);
+
+      font-size: 13px;
+
+      line-height: 1.7;
+
+      margin-top: 30px;
+    }
+
+    @media (min-width: 700px) {
+
+      .games {
+        display: grid;
+
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+    }
+
+    @media (max-width: 480px) {
+
+      body {
+        padding:
+          25px 15px;
+      }
+
+      .header h1 {
+        font-size: 25px;
+      }
+
+      .header-icon {
+        font-size: 48px;
+      }
+
+      .game-card {
+        padding: 20px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <main class="container">
+
+    <header class="header">
+
+      <div class="header-icon">
+        🛡️
+      </div>
+
+      <h1>
+        詐欺対策ゲームポータル
+      </h1>
+
+      <p>
+        ゲームで楽しく遊びながら、<br>
+        詐欺メッセージを見分ける力を身につけよう！
+      </p>
+
+    </header>
+
+
+    <section class="games">
+
+
+      <!-- GAME 01 -->
+
+      <article class="game-card">
+
+        <div class="game-icon">
+          🛡️
+        </div>
+
+        <div class="game-number">
+          GAME 01
+        </div>
+
+        <h2>
+          詐欺耐性診断ゲーム
+        </h2>
+
+        <p>
+          いろいろな場面の質問に答えて、
+          あなたの詐欺への注意ポイントをチェック！
+          遊びながら、自分がだまされやすい場面を知ることができます。
+        </p>
+
+        <a
+          class="play-button"
+          href="https://fraudprevention2026.github.io/Fraudprevention/"
+        >
+          🎮 ゲームをプレイ
+        </a>
+
+      </article>
+
+
+      <!-- GAME 02 -->
+
+      <article class="game-card">
+
+        <div class="game-icon">
+          🔎
+        </div>
+
+        <div class="game-number">
+          GAME 02
+        </div>
+
+        <h2>
+          怪しいポイントを探せ！
+        </h2>
+
+        <p>
+          詐欺メッセージの中から、
+          「ここが怪しい！」というポイントを探そう。
+          全10問からランダムで5問に挑戦します。
+        </p>
+
+        <a
+          class="play-button"
+          href="https://fraudprevention2026.github.io/FraudpreventionQuiz/"
+        >
+          🎮 ゲームをプレイ
+        </a>
+
+      </article>
+
+
+      <!-- GAME 03 -->
+
+      <article class="game-card">
+
+        <div class="game-icon">
+          ↔️
+        </div>
+
+        <div class="game-number">
+          GAME 03
+        </div>
+
+        <h2>
+          本物？ニセモノ？仕分けパズル
+        </h2>
+
+        <p>
+          届いたメッセージが本物なのか、
+          詐欺なのかを見分けよう。
+          カードを左右にスワイプして仕分けします。
+        </p>
+
+        <a
+          class="play-button"
+          href="https://fraudprevention2026.github.io/Slide-Quiz/"
+        >
+          🎮 ゲームをプレイ
+        </a>
+
+      </article>
+
+
+      <!-- GAME 04 -->
+
+      <article class="game-card">
+
+        <div class="game-icon">
+          🧩
+        </div>
+
+        <div class="game-number">
+          GAME 04
+        </div>
+
+        <h2>
+          詐欺メッセージ復元パズル
+        </h2>
+
+        <p>
+          バラバラになったメッセージのパーツを
+          正しい順番に並べて復元しよう。
+          メッセージの流れから怪しいポイントを学べます。
+        </p>
+
+        <a
+          class="play-button"
+          href="https://fraudprevention2026.github.io/Restoration-Puzzle/"
+        >
+          🎮 ゲームをプレイ
+        </a>
+
+      </article>
+
+
+    </section>
+
+
+    <footer class="footer">
+
+      <p>
+        ⚠️ 怪しいメッセージが届いたら、
+        すぐに返信・送金せず、落ち着いて確認しましょう。
+      </p>
+
+    </footer>
+
+  </main>
+
+</body>
+
+</html>
