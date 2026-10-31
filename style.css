@@ -105,7 +105,12 @@ body {
   font-weight: 800;
   line-height: 1.55;
   margin-bottom: 18px;
-  overflow-wrap: anywhere;
+  min-height: 4.65em; /* 3行分の高さを確保して回答ボタンの位置を統一 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 .scale-hint {
   color: rgba(255,255,255,.9);
