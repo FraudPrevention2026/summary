@@ -230,3 +230,38 @@ body {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+
+/* ==========================
+   ボタンの枠線を追加
+========================== */
+
+/* 回答ボタン */
+.answer-btn {
+  border: 2px solid #55309b;
+}
+
+/* 開始・再診断ボタン */
+.primary-btn {
+  border: 2px solid #a81755;
+}
+
+/* 学習・その他のボタン */
+.secondary-btn {
+  border: 2px solid #006b78;
+}
+
+/* マウスを乗せたとき */
+.answer-btn:hover,
+.primary-btn:hover,
+.secondary-btn:hover {
+  border-width: 3px;
+}
+
+/* キーボード操作時 */
+.answer-btn:focus-visible,
+.primary-btn:focus-visible,
+.secondary-btn:focus-visible {
+  outline: 3px solid #333333;
+  outline-offset: 3px;
+}
