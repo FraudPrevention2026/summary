@@ -223,7 +223,7 @@ body {
   body { padding: 14px; align-items: flex-start; }
   .app { margin: 10px auto; }
   .card { padding: 24px 17px; border-radius: 25px; }
-  .intro-origin { font-size: 12px; line-height: 1.75; }
+  .intro-origin { font-size: 12px; line-height: 1.75; padding: 12px; }
   .question-text { font-size: 23px; }
   .score-number { font-size: 52px; }
 }
