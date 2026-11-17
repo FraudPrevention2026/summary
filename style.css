@@ -67,6 +67,14 @@ body {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+.intro-origin {
+  color: white;
+  font-size: 13px;
+  line-height: 1.8;
+  text-align: left;
+  margin-bottom: 18px;
+  overflow-wrap: anywhere;
+}
 .intro-kicker, .result-kicker {
   color: rgba(255,255,255,.85);
   font-size: 12px;
@@ -215,6 +223,7 @@ body {
   body { padding: 14px; align-items: flex-start; }
   .app { margin: 10px auto; }
   .card { padding: 24px 17px; border-radius: 25px; }
+  .intro-origin { font-size: 12px; line-height: 1.75; }
   .question-text { font-size: 23px; }
   .score-number { font-size: 52px; }
 }
