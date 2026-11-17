@@ -265,3 +265,41 @@ body {
   outline: 3px solid #333333;
   outline-offset: 3px;
 }
+
+/* ボタンのホバー時：位置やサイズを変えない */
+.answer-btn:hover,
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: none;
+  border-width: 2px;
+  cursor: pointer;
+}
+
+/* 押したときもボタンを動かさない */
+.answer-btn:active,
+.primary-btn:active,
+.secondary-btn:active {
+  transform: none;
+}
+
+/* ボタンだけを少し浮かせる */
+.answer-btn:hover,
+.primary-btn:hover,
+.secondary-btn:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+/* ボタンを押したとき */
+.answer-btn:active,
+.primary-btn:active,
+.secondary-btn:active {
+  transform: translateY(0);
+}
+
+/* 動きを滑らかにする */
+.answer-btn,
+.primary-btn,
+.secondary-btn {
+  transition: transform 0.15s ease;
+}
