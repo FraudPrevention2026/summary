@@ -303,3 +303,16 @@ body {
 .secondary-btn {
   transition: transform 0.15s ease;
 }
+
+/* タイトル画面の文字配置 */
+.intro-title {
+  text-align: center;
+}
+
+/* タイトル下の文章を左寄せ */
+.intro-origin,
+.intro-kicker,
+.intro-copy,
+.intro-note {
+  text-align: left;
+}
