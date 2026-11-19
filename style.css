@@ -316,3 +316,8 @@ body {
 .intro-note {
   text-align: left;
 }
+/* 診断の質問文 */
+.question-text {
+  text-align: left;
+  white-space: pre-line;
+}
