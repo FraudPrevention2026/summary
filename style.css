@@ -304,14 +304,14 @@ body {
   transition: transform 0.15s ease;
 }
 
-/* タイトル画面の文字配置 */
-.intro-title {
+/* タイトル画面の配置 */
+.intro-title,
+.intro-kicker {
   text-align: center;
 }
 
-/* タイトル下の文章を左寄せ */
+/* 日本語の説明文だけ左寄せ */
 .intro-origin,
-.intro-kicker,
 .intro-copy,
 .intro-note {
   text-align: left;
