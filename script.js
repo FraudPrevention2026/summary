@@ -143,14 +143,14 @@ function showResult() {
         <p>${escapeHtml(a.tip)}</p>
       </article>
     `).join("")
-    : `<p class="no-attention">今回の回答では、点数上の注意ポイントは多くありませんでした。それでも、不審な連絡は必ず別の方法で確認しましょう。</p>`;
+    : `<p class="no-attention">今回の回答では、/n点数上の注意ポイントは多くありませんでした。/nそれでも、不審な連絡は必ず別の方法で確認しましょう。</p>`;
 
   card.innerHTML = `
     <div class="result-kicker">YOUR CHECK RESULT</div>
     <h1 class="result-title">詐欺耐性診断テスト結果</h1>
     <div class="score-number">${totalScore}<span> / 36 点</span></div>
     <p class="score-caption">詐欺耐性診断テスト得点（試作）</p>
-    <p class="result-message">この点数は、9項目への回答傾向を振り返るための目安です。被害に遭う確率や、あなた個人の危険度を示すものではありません。</p>
+    <p class="result-message">この点数は、9項目への回答傾向を振り返るための/n目安です。被害に遭う確率や、/nあなた個人の危険度を示すものではありません。</p>
     <h2 class="section-title">見直しておきたいポイント</h2>
     ${attentionHtml}
     <div class="important-note">
