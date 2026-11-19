@@ -321,3 +321,8 @@ body {
   text-align: left;
   white-space: pre-line;
 }
+/* 最終結果の注意書きを左寄せ */
+.method-note {
+  text-align: left;
+  white-space: pre-line;
+}
